@@ -57,7 +57,7 @@ int main()
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) 
 {
-	glViewport(0, 0, width, height);  (0, 0);
+	glViewport(0, 0, width, height);
 }
 
 //处理输入事件

@@ -129,6 +129,7 @@ int main()
     };
 
 	// 生成 VBO对象	缓冲对象有多种  顶点缓冲对象是 GL_ARRAY_BUFFER
+
     unsigned int VBO;
     unsigned int VAO;
     unsigned int EBO;
@@ -186,6 +187,8 @@ int main()
 		//使用着色器程序
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO);
+        //glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		//glDrawArrays(GL_TRIANGLES, 0, 3);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
